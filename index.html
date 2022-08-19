@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/638074bd85.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel = "icon" href = 
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/640px-Heart_coraz%C3%B3n.svg.png" 
+            type = "image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Para mi Tabi</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">"TE AMO HASTA LA LUNA Y DE VUELTA."</a>
+        <ul>
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="https://mhnirra.github.io/tabi-te-amo/">Te amo</a></li>
+            
+        </ul>
+    </header>
+    <section>
+        <img src="img/stars.png" id="stars" alt="">
+        <img src="img/moon.png" id="moon" alt="">
+        <img src="img/mountains_behind.png" id="mountains_behind" alt="">
+        <h2 id="text">Te amo mucho mi tesoro.</h2>
+        <a href="#sec" id="btn">Te amo</a>
+        <img src="img/mountains_front.png" id="mountains_front" alt="">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Tabata Seguel, TE AMO.</h2>
+        <p>
+            Holi amor, quiero que esto siempre lo lea cuando no tenga ganas de nada, se sienta triste o tenga penita.
+            Quiero recordarte lo mucho que te amo, lo espectacularmente perfecta que eres, lo bella, hermosa, preciosa, divina,
+            estupenda, regia, guapa e inteligente que eres, eres una mina increible Tabi, nunca lo dudes, nunca dudes de tí.
+            Quiero que sepas que estoy muy orgulloso de ti, no importa cuando lea esto, siempre estaré orgulloso de cada gran
+            y pequeño pasito que vaya dando en su vida, te amo con mi alma Tabata Alexandra Seguel Paredes.
+            <br>
+            <br>
+            Quiero quedarme contigo una vida entera, quizás ahora seamos muy jóvenes, quizás nos falte mucho por vivir amor, pero te
+            lo digo ahora y siempre, quiero quedarme contigo hasta el final de mis dias, quiero una vida a tu lado, un mundo contigo.
+            como una vez le dije, usted al momento de darme un beso quizás se pone de puntillas para llegar a la altura, pero no sabes 
+            que la realidad es que soy yo quien no le llego ni a los pies a usted amor, eres lo mejor de este universo, eres el sol que 
+            ilumina mis días, eres la luna que ilumina mis noches, eres todo para mi amor, un regalo de dios, en serio lo digo, ni con toda la
+            materia que hay en este universo puedo lograr a explicarte lo mucho que te amo mi vida hermosa, te amo con mi alma mi tesoro hermoso.
+            <br>
+            <br>
+            En la variedad del espacio y en la inmensidad del tiempo, una de mis alegrias es compartir un planeta y una época contigo, lograr
+            coincidir en esta vida ha sido la cosa más hermosa que me ha pasado, te lo juro, no hay momento que no piense en ti, en lo feliz y alegre que soy a su
+            lado, porque logras sacarme esa sonrisa cuando creí que nunca lo iba a hacer, logras sacarme de la penita con un simple mensajito, logras muchas 
+            cosas en mi y eso no tiene precio, te juro que no tiene precio amor, lograste sacarme del abismo, de donde creí que nunca saldría, y mírame ahora
+            feliz y sonriente por la vida por tenerte a mi lado, eres lo mejor del mundo, nunca me faltes. En mi opinión, eres la mejor persona que existe en la historia
+            de este universo, te amo con mi alma mi princesita hermosa.
+            <br>
+            <br>
+            <h2>CARTA PARA MI TESORO</h2>
+            <p>
+            Holi mi princesita hermosa, espero que se encuentre mejor al momento de leer esta carta, me encantaría que la primera vez que la leyese fuese con esta 
+            en sus manos y no a travéz de una foto por correo, espero que pasen luego los días para poder verte y abrazarte, darte un beso gigante, no sabes cuanto
+            te amo, en serio, te amo con mi alma. Felices 4 meses, a la distancia, pero felices 4 meses, ya podremos vernos y celebrar juntitos, como corresponde.
+            Quiero decirte que eres lo mejor que me ha pasado en la vida, en serio lo digo, prometo no fallarte, solo le pido a Dios que te cuide y nos de una vida juntos, también
+            que te quite todas tus inseguridad, miedos, problemas, momentos dificiles y que los de a mi, porque una persona tan maravillosa como usted merece todo lo bonito del mundo y que
+            siempre esté feliz. TE AMO CON MI ALMA TABATA ALEXANDRA SEGUEL PAREDES.
+            <br>
+            <h2>TE AMO MUCHO PRECIOSAAAAAAAAAAAAAAAAAAA</h2>
+        </p>
+        </p>
+    </div>
+    <!--JS-->
+    <script>
+        let stars = document.getElementById("stars");
+        let moon = document.getElementById("moon");
+        let mountains_behind = document.getElementById("mountains_behind");
+        let text = document.getElementById("text");
+        let btn = document.getElementById("btn");
+        let mountains_front = document.getElementById("mountains_front");
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px'; 
+        })
+    </script>
+</body>
+
+</html>
